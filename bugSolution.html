@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <div id="myDiv">
+    <p>This is some text.</p>
+  </div>
+
+  <script>
+    // Correctly using createElement to add a complete paragraph element
+    var newParagraph = document.createElement("p");
+    newParagraph.textContent = "Another paragraph";
+    document.getElementById("myDiv").appendChild(newParagraph);
+  </script>
+</body>
+</html>
